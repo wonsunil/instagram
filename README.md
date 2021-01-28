@@ -8,5 +8,5 @@
 
 
 ## 키워드
-### css animation, keyframe
-### javascript localStorage
+- css animation, keyframe
+- javascript localStorage
