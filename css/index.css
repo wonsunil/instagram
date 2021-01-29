@@ -12,6 +12,7 @@
 	/*background: #282A34;*/
 	background: #3C3F51;
 	color: white;
+	user-select: none;
 }
 .content-line{ width: calc(100%/3); }
 .content-line:nth-of-type(odd) { margin: 10px; }
@@ -35,9 +36,10 @@
 	width: 20px;
 	height: 20px;
 	margin-right: 10px;
+	user-select: none;
 }
 
-.heart-animation{
+.heart-animation > img{
 	width: 90px;
 	height: 90px;
 	position: absolute;
@@ -45,7 +47,6 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	animation: heart 0.7s linear;
-	background: red;
 }
 
 @keyframes heart{
