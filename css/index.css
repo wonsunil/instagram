@@ -9,18 +9,30 @@
 	height: 100%;
 	margin-left: 10%;
 	display: flex;
+	/*background: #282A34;*/
+	background: #3C3F51;
+	color: white;
 }
-
-.content-line{ width: calc(100%/3); padding: 10px; }
-.content{
-	width: 100%;
-	margin: 10px;
-	border-radius: 10px;
-	border: 1px solid black;
-}
+.content-line{ width: calc(100%/3); }
+.content-line:nth-of-type(odd) { margin: 10px; }
+.content-line:nth-of-type(even) { margin-top: 10px; }
+.content{ width: 100%; margin-bottom: 10px; }
 .content-picture img{
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	border-radius: 15px;
 }
-.content-menu{ margin: 5px 0; }
+.content-menu{
+	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.content-menu > div{ align-items: center; }
+.content-profile{ width: 75%; }
+.content-active-menu{ width: 25%; display: flex; }
+.content-active-menu span{ display: block; margin-right: auto; }
+.content-active-menu img{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
