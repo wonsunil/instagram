@@ -1,4 +1,10 @@
 *{ margin: 0; padding: 0; }
+html, body{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+}
 
 #wrap{ width: 100%; height: 100vh; }
 
@@ -17,7 +23,7 @@
 .content-line{ width: calc(100%/3); }
 .content-line:nth-of-type(odd) { margin: 10px; }
 .content-line:nth-of-type(even) { margin-top: 10px; }
-.content{ width: 100%; margin-bottom: 10px; }
+.content{ width: 100%; margin-bottom: 2%; }
 .content-picture img{
 	width: 100%;
 	height: 100%;
