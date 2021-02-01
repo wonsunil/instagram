@@ -19,7 +19,9 @@ html, body{
 	background: #3C3F51;
 	color: white;
 	user-select: none;
+	overflow-y: scroll;
 }
+#contents::-webkit-scrollbar { display: none; }
 .content-line{ width: calc(100%/3); }
 .content-line:nth-of-type(odd) { margin: 10px; }
 .content-line:nth-of-type(even) { margin-top: 10px; }
