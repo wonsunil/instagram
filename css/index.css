@@ -2,11 +2,10 @@
 html, body{
 	width: 100%;
 	height: 100vh;
-	overflow: hidden;
 	box-sizing: border-box;
 }
 
-#wrap{ width: 100%; height: 100vh; }
+#wrap{ width: 100%; height: 100%; }
 
 #stories{ height: 10%; background: lightgray; }
 
@@ -22,9 +21,11 @@ html, body{
 	overflow-y: scroll;
 }
 #contents::-webkit-scrollbar { display: none; }
+
 .content-line{ width: calc(100%/3); }
 .content-line:nth-of-type(odd) { margin: 10px; }
 .content-line:nth-of-type(even) { margin-top: 10px; }
+
 .content{ width: 100%; margin-bottom: 2%; }
 .content-picture img{
 	width: 100%;
@@ -38,7 +39,13 @@ html, body{
 }
 .content-menu > div{ align-items: center; }
 .content-profile{ width: 75%; }
-.content-active-menu{ width: 25%; display: flex; }
+
+.content-active-menu{
+	width: 25%;
+	display: flex;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
 .content-active-menu span{ display: block; margin-right: auto; }
 .content-active-menu img{
 	width: 20px;
