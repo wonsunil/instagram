@@ -27,7 +27,7 @@ html, body{
 .content-line:nth-of-type(even) { margin-top: 10px; }
 
 .content{ width: 100%; margin-bottom: 2%; }
-.content-picture img{
+.content-picture{
 	width: 100%;
 	height: 100%;
 	border-radius: 15px;
