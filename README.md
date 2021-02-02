@@ -9,3 +9,7 @@
 ## 키워드
 - css animation
 - javascript localStorage
+
+## 추가정보
+- 브라우저 스팩 : 크롬 88이상
+- ECMAScript 8이상
