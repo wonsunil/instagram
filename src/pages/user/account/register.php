@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../../resources/css/form.css">
 </head>
 <body>
-<form action="" method="POST">
+<form action="../../../action/register.php" method="POST">
     <input type="text" name="email" class="form-first-input" placeholder="이메일" autocomplete="off">
     <input type="text" name="name" placeholder="이름" autocomplete="off">
     <input type="password" name="password" placeholder="비밀번호">
