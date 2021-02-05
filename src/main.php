@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>instagram</title>
 	<link rel="stylesheet" href="resources/css/index.css">
-	<script src="resources/jsndex.js"></script>
+	<script src="resources/js/index.js"></script>
 </head>
 <body>
 	<article id="wrap">
