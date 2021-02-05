@@ -9,14 +9,14 @@ window.onload = () => {
         heartSpan.innerHTML = Number(heartSpan.innerHTML) + 1;
     });
 
-    const parseLocalStorate = () => JSON.parse(localStorage.getItem("heart")) ?? {id: []};
+    const parseLocalStorage = () => JSON.parse(localStorage.getItem("heart")) ?? {id: []};
     const findFromLocalStorage = index => {
-        const ids = parseLocalStorate();
+        const ids = parseLocalStorage();
 
         return ids["id"].findIndex(id => id === index);
     };
     const setState = (newState) => {
-        const ids = parseLocalStorate();
+        const ids = parseLocalStorage();
         ids["id"].push(newState["id"]);
 
         localStorage.setItem("heart", JSON.stringify(ids));
@@ -62,7 +62,7 @@ window.onload = () => {
             return setState({id: contentIndex});
         };
 
-        const array = parseLocalStorate()["id"];
+        const array = parseLocalStorage()["id"];
         array.splice(findFromLocalStorage(contentIndex), 1);
 
         localStorage.setItem("heart", JSON.stringify({id: array}));
