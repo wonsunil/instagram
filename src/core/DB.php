@@ -10,7 +10,7 @@ class DB{
         return self::$db;
     }
 
-    public static function fetch($sql, $arr) {
+    public static function fetch(string $sql, array $arr): bool {
         $stmt = self::getDB() -> prepare($sql);
         $stmt -> execute($arr);
         $result = $stmt;
@@ -18,7 +18,7 @@ class DB{
         return $result -> fetch();
     }
 
-    public static function fetchAll($sql, $arr): array {
+    public static function fetchAll(string $sql, array $arr): array {
         $stmt = self::getDB() -> prepare($sql);
         $stmt -> execute($arr);
         $result = $stmt;
