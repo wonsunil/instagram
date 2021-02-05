@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../:\xampp\htdocs\instagram\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/instagram.iml
+/modules.xml
+/vcs.xml
+/inspectionProfiles/Project_Default.xml
+/php.xml
